@@ -12,7 +12,7 @@
 	INP
 	STA 91	;y = 91
 	SUB 90	;from y (91), subtract x (90) - result stored to acc
-	BRP b	;branch and goto b if acc is >= 1 (y is bigger)
+	BRP b	;branch and goto b if acc is >= 0 (y is bigger)
 	LDA 90	;load from x
 	OUT	
 	HLT		;stop here
